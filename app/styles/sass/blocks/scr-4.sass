@@ -1,0 +1,107 @@
+//Screen 4 styles
+.scr-4
+    background-color: #F1F2F4
+    justify-content: space-between
+    align-items: center
+    padding: 11.1vw
+.roll-wrap
+    width: 37.5vw
+    height: 37.5vw
+.roll
+    position: relative
+    width: 100%
+    height: 100%
+    border-radius: 50%
+    overflow: hidden
+.circle
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 19.7vw
+    height: 19.7vw
+    border-radius: 50%
+    background-color: #F1F2F4
+    align-items: center
+    justify-content: center
+    a
+        align-items: center
+        justify-content: center
+        color: #111
+        font-family: inter-medium
+        font-size: 1.25vw
+        line-height: 1.6vw
+        span
+            margin-bottom: .83vw
+        img
+            width: 2.5vw
+.sector
+    width: 100%
+    height: 100%
+    position: absolute
+    top: -50%
+    left: -50%
+    transform-origin: 100% 100%
+    a
+        position: absolute
+    &:nth-child(1)
+        transform: rotate(0deg) skew(30deg)
+        a
+            transform: skew(-30deg)
+    &:nth-child(2)
+        transform: rotate(60deg) skew(30deg)
+        a
+            transform: skew(-30deg)
+    &:nth-child(3)
+        transform: rotate(120deg) skew(30deg)
+        a
+            transform: skew(-30deg)
+    &:nth-child(4)
+        transform: rotate(180deg) skew(30deg)
+        a
+            transform: skew(-30deg)
+    &:nth-child(5)
+        transform: rotate(240deg) skew(30deg)
+        a
+            transform: skew(-30deg)
+    &:nth-child(6)
+        transform: rotate(300deg) skew(30deg)
+        a
+            transform: skew(-30deg)
+    &:nth-child(2n-1)
+        background-color: #000
+    &:nth-child(2n)
+        background-color: #005FFF
+.cycle__list
+    margin-bottom: 11.3vw
+.cycle__title
+    font-family: inter-light
+    font-size: 2.5vw
+    line-height: 3.3vw
+    margin-bottom: 4.1vw
+    span
+        font-family: inter-medium
+.stage
+    position: relative
+    font-family: inter-light
+    font-size: 1.1vw
+    line-height: 2.5vw
+    color: #111
+.stage__numb
+    position: absolute
+    top: 50%
+    right: calc(100% + 1.25vw)
+    transform: translate(0, -50%)
+    color: #111
+    opacity: .12
+    font-family: inter-semibold
+    font-size: 1.1vw
+    line-height: 1.6vw
+.what-we-do
+    font-family: inter-medium
+    font-family: .97vw
+    line-height: 1.1vw
+    color: #2B2B2B
+    opacity: .6
+
+

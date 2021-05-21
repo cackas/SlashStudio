@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		infinite: true,
 		speed: 500,
 		fade: true,
+		dots: false,
 		cssEase: 'linear'
 	  });
 	$('.case-wrap').slick({
@@ -23,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		swipe: true,
 		slidesToScroll: 1,
 		focusOnSelect: true,
+		dots: false,
 		asNavFor: '.car-1-wrap'
 	  });
 
