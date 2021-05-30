@@ -7,6 +7,7 @@
     background-size: 53.5vw
     background-repeat: no-repeat
     background-position: 0 100%
+    overflow: hidden
     a
         color: #111
 .data-dr
@@ -20,8 +21,8 @@
         font-family: inter-medium
 .engin
     position: absolute
-    top: 10vw
-    right: 18.2vw
+    top: 0
+    right: 8vw
     font-family: inter-light
     font-size: 4.1vw
     line-height: 5vw
@@ -29,11 +30,19 @@
         font-family: inter-medium
 .mark
     position: absolute
-    bottom: 13.1vw
-    right: 37.7vw
+    bottom: 0
+    right: 27.7vw
     font-family: inter-medium
     font-size: 4.1vw
     line-height: 5vw
+    z-index: 2
+    &:hover + .line
+        transform: scaleX(1)    
+    &:hover ~ .cloud-2
+        transition: all 1s ease
+        transform: rotate(90deg)
+        background: radial-gradient(40% 50%, #E5D5FC, transparent)
+    
 .about-us
     position: absolute
     bottom: 8.8vw
@@ -43,3 +52,77 @@
     line-height: 1.1vw
     color: #2B2B2B
     opacity: .6
+.head-circle
+    width: 41.8vw
+    align-items: center
+    justify-content: center
+    transition: all 1s ease
+    &::after
+        content: ''
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+        width: 41.8vw
+        height: 41.8vw
+        border-radius: 50%
+        border: 2px dashed rgba(#111,.1)
+        animation: circle 60s infinite ease-in-out
+        transform-origin: 0% 0%
+.engin
+    padding: 10vw 0 20vw
+    z-index: 2
+    &::after
+        top: 37%
+        left: 50%
+    &:hover + .line
+        transform: scaleX(1)    
+    &:hover ~ .cloud-1
+        transition: all 1s ease
+        transform: rotate(90deg)
+        background: radial-gradient(40% 50%, #E5D5FC, transparent)
+    
+.line
+    transition: all .3s ease
+    position: absolute
+    transform-origin: 0 0
+    transform: scaleX(0)
+    background: linear-gradient(47.89deg, #CA6CED 15.76%, #F1F2F4 67.38%)
+    z-index: 1
+.line-1
+    top: 31%
+    left: 58.5%
+    height: 1vw
+    width: 24vw
+.line-2
+    top: 81%
+    left: 40%
+    height: 1vw
+    width: 21vw
+.cloud
+    transition: all 1s ease
+    position: absolute
+    width: 45vw
+    height: 45vw
+    transform-origin: 50% 50%
+    transform: rotate(0deg)
+    background: radial-gradient(40% 50%, #CDD8F0, transparent)
+    z-index: 1
+.cloud-1
+    top: -10%
+    right: 6%
+.cloud-2
+    top: 43%
+    right: 25%
+.mark
+    padding: 20vw 0 10vw
+    &::after
+        top: 67%
+        left: 50%
+
+@keyframes circle
+  from
+    transform: rotate(0deg) translate(-50%,-50%)
+
+  to
+    transform: rotate(360deg) translate(-50%,-50%)

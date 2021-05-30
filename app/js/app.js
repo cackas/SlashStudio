@@ -20,12 +20,14 @@ document.addEventListener('DOMContentLoaded', () => {
 		vertical: true,
 		arrows: false,
 		centerMode: true,
-		slidesToShow: 3,
+		slidesToShow: 1,
 		swipe: true,
 		slidesToScroll: 1,
 		focusOnSelect: true,
 		dots: false,
-		asNavFor: '.car-1-wrap'
+		asNavFor: '.car-1-wrap',
+		verticalSwiping: true,
+		centerPadding: '20vw'
 	  });
 
 	  $('.arr-up').click(function(){

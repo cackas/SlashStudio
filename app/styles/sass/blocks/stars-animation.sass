@@ -1,5 +1,6 @@
 .stars-wrap
   position: absolute
+  z-index: 1
   top: 55%
   left: 75%
   width: 0
@@ -7,7 +8,14 @@
   transform-style: preserve-3d
   perspective: 163.4vw
   animation: rotate 14s infinite linear
-
+  .c::after
+    content: ''
+    width: 2px
+    height: 2px
+    position: absolute
+    top: 0
+    left: 0
+    background: linear-gradient(44.54deg, #CA6CED 24.33%, #000000 85%)
 @keyframes rotate
   100%
     transform: rotateY(360deg) rotateX(360deg)
